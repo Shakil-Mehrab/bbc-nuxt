@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav_ul_li{
+  @apply px-4 py-2 border-r border-yellow-200
+}

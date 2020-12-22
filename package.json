@@ -1,0 +1,31 @@
+{
+  "name": "futurestation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "child_process": "^1.0.2",
+    "core-js": "^3.6.5",
+    "fs": "^0.0.1-security",
+    "module": "^1.2.5",
+    "net": "^1.0.2",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.4.1",
+    "@tailwindcss/forms": "^0.2.1",
+    "autoprefixer": "^9.8.6",
+    "install": "^0.13.0",
+    "npm": "^6.14.10",
+    "postcss": "^7.0.35",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "tailwindcss": "^1.9.6"
+  }
+}
