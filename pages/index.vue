@@ -489,9 +489,81 @@
         </div>
       </div>
     </section>
-    <section class="bg-gray-100">
-      <div>
-        dlkfjdlkf
+    <!-- Featured Video -->
+    <section class="pb-8 bg-gray-100 mt-10 ">
+      <div class="container mx-auto pt-4">
+        <div class="mx-1 px-1">
+          <h2 class="text-2xl border-l-4 border-red-700 leading-5 pl-2 font-bold mb-4 ">
+            <span>Featured Video</span>
+          </h2>
+          <div class="md:flex">
+            <div class="w-full">
+              <div class="relative">
+                <ul class="mb-5">
+                  <li class="w-full hover:shadow-xl">
+                    <div class="relative">
+                      <div>
+                        <img
+                          src="https://ychef.files.bbci.co.uk/width/790/p0808x91.jpg"
+                          alt="From cocktails to karaoke, why more Japanese people are going it alone" class="w-full"
+                        />
+                      </div>
+                      <div class="absolute bottom-0 p-2 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="text-xl leading-5 sm:text-3xl sm:leading-10 text-white  font-semibold">
+                          <a href="#">
+                            Trump denounces 'wasteful' coronavirus aid bill
+                          </a>
+                        </h3>
+
+                        <p class="hidden md:block short_description md:text-white">
+                          He asks lawmakers to &quot;remove wasteful and unnecessary
+                          items&quot;, adding the package &quot;really is a
+                          disgrace&quot;.
+                        </p>
+
+                        <a  class="text-white country_location" href="#"  >US &amp; Canada</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="absolute top-0">
+                  <a href="">
+                    <svg class="w-10 bg-black p-2 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+
+              <ul class="grid grid-cols-2 grid-rows-3 sm:grid-cols-3 sm:grid-rows-2 gap-2">
+                <li class="hover:shadow-xl" v-for="n in 6" :key="n.id">
+                  <div>
+                    <div>
+                      <img
+                        src="https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/115FB/production/_116236117_gettyimages-1251214419.jpg"
+                        alt="Alibaba headquarters in Beijing" class="w-full"
+                      />
+                    </div>
+                    <div class="pt-1 pb-4 p-2">
+                      <h3 class="text-lg leading-5 sm:text-2xl font-semibold sm:leading-7">
+                        <a href="#">
+                          Alibaba being investigated over monopoly tactics
+                        </a>
+                      </h3>
+                      <p class="text-sm sm:text-lg short_description">
+                        The Chinese tech giant is face a probe by regulators into
+                        locking merchants into its platform.
+                      </p>
+                      <a class="country_location">Bussiness</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
       </div>
     </section>
     <!-- on air -->
@@ -697,7 +769,7 @@
           <div class="md:flex">
             <div class="w-full">
               <ul class="mb-5 sm:flex gap-4">
-                <li class="w-full hover:shadow-xl mb-2">
+                <li class="w-full hover:shadow-xl mb-2" v-for="n in 2" :key="n.id">
                   <div class="relative">
                     <div>
                       <img
@@ -713,26 +785,15 @@
                       </h3>
                       <a  class="text-white country_location" href="#"  >US &amp; Canada</a>
                     </div>
-                  </div>
-                </li>
-                <li class="w-full hover:shadow-xl mb-2">
-                  <div class="relative">
-                    <div>
-                      <img
-                        src="https://ychef.files.bbci.co.uk/width/790/p0808x91.jpg"
-                        alt="From cocktails to karaoke, why more Japanese people are going it alone" class="w-full"
-                      />
-                    </div>
-                    <div class="absolute bottom-0 p-2 bg-gradient-to-t from-black to-transparent">
-                      <h3 class="text-xl leading-5 sm:text-3xl sm:leading-10 text-white  font-semibold">
-                        <a href="#">
-                          Trump denounces 'wasteful' coronavirus
-                        </a>
-                      </h3>
-                      <a  class="text-white country_location" href="#"  >US &amp; Canada</a>
+                    <div class="absolute top-0">
+                      <svg class="w-10 bg-black p-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
                     </div>
                   </div>
                 </li>
+
               </ul>
               <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 <li class="hover:shadow-xl bg-white" v-for="n in 3" :key="n.id">
@@ -771,508 +832,32 @@
 
 
 
-
-
-
-
-
-
-
-<!--
-
-    <section class="module module--highlight module--languages">
-      <h2 class="module__title">
-        <a
-          class="module__title__link"
-          href="/worldserviceradio"
-          rev="languages|header"
-          >BBC in other languages</a
-        >
-      </h2>
-      <div class="module__content">
-        <div class="ws">
-          <div class="ws-headlines">
-            <ul class="ws-headlines__list">
-              <li class="ws-headline ws-headline--urdu">
-                <h3 class="ws-headline__language">
-                  <a
-                    class="ws-headline__language-link"
-                    title="Urdu"
-                    href="/urdu/"
-                    rev="languages|link"
-                  >
-                    Urdu
-                  </a>
-                </h3>
-                <p class="ws-headline__title" dir="rtl">
-                  <a
-                    class="ws-headline__title-link"
-                    title="قندھار میں انڈین طیارے کے گرد چکر کاٹتا سائیکل سوار کون تھا؟"
-                    href="/urdu/pakistan-55432431"
-                    rev="languages|headline"
-                  >
-                    قندھار میں انڈین طیارے کے گرد چکر کاٹتا سائیکل سوار کون تھا؟
-                  </a>
-                </p>
-              </li>
-              <li class="ws-headline ws-headline--vietnamese">
-                <h3 class="ws-headline__language">
-                  <a
-                    class="ws-headline__language-link"
-                    title="Vietnamese"
-                    href="/vietnamese/"
-                    rev="languages|link"
-                  >
-                    Vietnamese
-                  </a>
-                </h3>
-                <p class="ws-headline__title" dir="ltr">
-                  <a
-                    class="ws-headline__title-link"
-                    title="TT Trump phủ quyết dự luật quốc phòng 'vi hiến'"
-                    href="/vietnamese/world-55434097"
-                    rev="languages|headline"
-                  >
-                    TT Trump phủ quyết dự luật quốc phòng 'vi hiến'
-                  </a>
-                </p>
-              </li>
-              <li class="ws-headline ws-headline--indonesian">
-                <h3 class="ws-headline__language">
-                  <a
-                    class="ws-headline__language-link"
-                    title="Indonesian"
-                    href="/indonesia/"
-                    rev="languages|link"
-                  >
-                    Indonesian
-                  </a>
-                </h3>
-                <p class="ws-headline__title" dir="ltr">
-                  <a
-                    class="ws-headline__title-link"
-                    title="Covid-19 muncul lagi di Taiwan, pilot asal Selandia Baru yang dianggap sebarkan virus dipecat"
-                    href="/indonesia/dunia-55434165"
-                    rev="languages|headline"
-                  >
-                    Covid-19 muncul lagi di Taiwan, pilot asal Selandia Baru
-                    yang dianggap sebarkan virus dipecat
-                  </a>
-                </p>
-              </li>
-              <li class="ws-headline ws-headline--japanese">
-                <h3 class="ws-headline__language">
-                  <a
-                    class="ws-headline__language-link"
-                    title="Japanese"
-                    href="/japanese/"
-                    rev="languages|link"
-                  >
-                    Japanese
-                  </a>
-                </h3>
-                <p class="ws-headline__title" dir="ltr">
-                  <a
-                    class="ws-headline__title-link"
-                    title="イギリス、南アで見つかった変異種の感染者2人を確認"
-                    href="/japanese/55433557"
-                    rev="languages|headline"
-                  >
-                    イギリス、南アで見つかった変異種の感染者2人を確認
-                  </a>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="ws-languages">
-            <h2 class="ws-languages__title">
-              <a
-                href="/ws/languages"
-                class="ws-languages__link"
-                rev="languages|header"
-              >
-                More Languages
-              </a>
-            </h2>
-            <ul class="ws-languages__list">
-              <li class="ws-language ws-language--ar">
-                <a
-                  class="ws-language__link"
-                  href="/arabic/"
-                  title="Arabic service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Arabic</span>
-                  <span class="ws-language__native"> عربي </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--as">
-                <a
-                  class="ws-language__link"
-                  href="/azeri/"
-                  title="Azeri service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Azeri</span>
-                  <span class="ws-language__native"> AZƏRBAYCAN </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--bn">
-                <a
-                  class="ws-language__link"
-                  href="/bengali/"
-                  title="Bangla service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Bangla</span>
-                  <span class="ws-language__native"> বাংলা </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--my">
-                <a
-                  class="ws-language__link"
-                  href="/burmese/"
-                  title="Burmese service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Burmese</span>
-                  <span class="ws-language__native"> မြန်မာ </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--zh">
-                <a
-                  class="ws-language__link"
-                  href="/zhongwen/simp/"
-                  title="Chinese service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Chinese</span>
-                  <span class="ws-language__native"> 中文网 </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--fr">
-                <a
-                  class="ws-language__link"
-                  href="/afrique/"
-                  title="French (for Africa) service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">French</span>
-                  <span class="ws-language__native"> AFRIQUE </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--ha">
-                <a
-                  class="ws-language__link"
-                  href="/hausa/"
-                  title="Hausa service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Hausa</span>
-                  <span class="ws-language__native"> HAUSA </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--hi">
-                <a
-                  class="ws-language__link"
-                  href="/hindi/"
-                  title="Hindi service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Hindi</span>
-                  <span class="ws-language__native"> हिन्दी </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--id">
-                <a
-                  class="ws-language__link"
-                  href="/indonesia/"
-                  title="Indonesian service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Indonesian</span>
-                  <span class="ws-language__native"> INDONESIA </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--jp">
-                <a
-                  class="ws-language__link"
-                  href="/japanese/"
-                  title="Japanese service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Japanese</span>
-                  <span class="ws-language__native"> 日本語 </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--rw">
-                <a
-                  class="ws-language__link"
-                  href="/gahuza/"
-                  title="Kirundi service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Kinyarwanda</span>
-                  <span class="ws-language__native"> GAHUZA </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--rn">
-                <a
-                  class="ws-language__link"
-                  href="/gahuza/"
-                  title="Kirundi service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Kirundi</span>
-                  <span class="ws-language__native"> KIRUNDI </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--ky">
-                <a
-                  class="ws-language__link"
-                  href="/kyrgyz/"
-                  title="Kyrgyz service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Kyrgyz</span>
-                  <span class="ws-language__native"> Кыргыз </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--mr">
-                <a
-                  class="ws-language__link"
-                  href="/marathi/"
-                  title="Marathi service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Marathi</span>
-                  <span class="ws-language__native"> मराठी </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--ne">
-                <a
-                  class="ws-language__link"
-                  href="/nepali/"
-                  title="Nepali service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Nepali</span>
-                  <span class="ws-language__native"> नेपाली </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--ps">
-                <a
-                  class="ws-language__link"
-                  href="/pashto/"
-                  title="Pashto service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Pashto</span>
-                  <span class="ws-language__native"> پښتو </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--fa">
-                <a
-                  class="ws-language__link"
-                  href="/persian/"
-                  title="Persian service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Persian</span>
-                  <span class="ws-language__native"> فارسی </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--pt-BR">
-                <a
-                  class="ws-language__link"
-                  href="/portuguese/"
-                  title="Portuguese (for Brazil) service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Portuguese</span>
-                  <span class="ws-language__native"> BRASIL </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--ru">
-                <a
-                  class="ws-language__link"
-                  href="/russian/"
-                  title="Russian service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Russian</span>
-                  <span class="ws-language__native"> НА РУССКОМ </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--si">
-                <a
-                  class="ws-language__link"
-                  href="/sinhala/"
-                  title="Sinhala service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Sinhala</span>
-                  <span class="ws-language__native"> සිංහල </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--so">
-                <a
-                  class="ws-language__link"
-                  href="/somali/"
-                  title="Somali service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Somali</span>
-                  <span class="ws-language__native"> SOMALI </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--es">
-                <a
-                  class="ws-language__link"
-                  href="/mundo/"
-                  title="Spanish service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Spanish</span>
-                  <span class="ws-language__native"> MUNDO </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--sw">
-                <a
-                  class="ws-language__link"
-                  href="/swahili/"
-                  title="Swahili service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Swahili</span>
-                  <span class="ws-language__native"> SWAHILI </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--ta">
-                <a
-                  class="ws-language__link"
-                  href="/tamil/"
-                  title="Tamil service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Tamil</span>
-                  <span class="ws-language__native"> தமிழ் </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--tr">
-                <a
-                  class="ws-language__link"
-                  href="/turkce/"
-                  title="Turkish service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Turkish</span>
-                  <span class="ws-language__native"> TÜRKÇE </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--uk">
-                <a
-                  class="ws-language__link"
-                  href="/ukrainian/"
-                  title="Ukrainian service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Ukrainian</span>
-                  <span class="ws-language__native"> УКРАЇНСЬКA </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--ur">
-                <a
-                  class="ws-language__link"
-                  href="/urdu/"
-                  title="Urdu service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Urdu</span>
-                  <span class="ws-language__native"> اردو </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--uz">
-                <a
-                  class="ws-language__link"
-                  href="/uzbek/"
-                  title="Uzbek service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Uzbek</span>
-                  <span class="ws-language__native"> O'ZBEK </span>
-                </a>
-              </li>
-              <li class="ws-language ws-language--vi">
-                <a
-                  class="ws-language__link"
-                  href="/vietnamese/"
-                  title="Vietnamese service"
-                  rev="languages|link"
-                >
-                  <span class="ws-language__english">Vietnamese</span>
-                  <span class="ws-language__native"> TIẾNG VIỆT </span>
-                </a>
-              </li>
-            </ul>
-          </div>
+<div class="container-fluid">
+    <carousel
+      class="home-slider"
+      :per-page="8"
+      :autoplay="true"
+      :autoplayTimeout="5000"
+      :loop="true"
+      :navigationEnabled="true"
+    >
+      <slide v-for="n in 5" :key="n.id">
+        <div class="mx-1">
+          <img
+            class="img-responsive"
+            src="https://picsum.photos/600/300"
+            alt="Awesome Image"
+          />
         </div>
-      </div>
-    </section>
+      </slide>
+    </carousel>
+  </div>
 
-    <aside role="complementary">
-      <div id="orb-aside" class="orb-nav-sec b-r b-g-p">
-        <div class="orb-footer-inner" role="navigation" aria-label="BBC">
-          <h2 class="orb-footer-lead">Explore the BBC</h2>
-          <div class="orb-footer-primary-links">
-            <ul>
-              <li class="orb-nav-home">
-                <a href="https://www.bbc.co.uk">Home</a>
-              </li>
-              <li class="orb-nav-news">
-                <a href="https://www.bbc.co.uk/news">News</a>
-              </li>
-              <li class="orb-nav-sport">
-                <a href="https://www.bbc.co.uk/sport">Sport</a>
-              </li>
-              <li class="orb-nav-weather">
-                <a href="https://www.bbc.co.uk/weather">Weather</a>
-              </li>
-              <li class="orb-nav-iplayer">
-                <a href="https://www.bbc.co.uk/iplayer">iPlayer</a>
-              </li>
-              <li class="orb-nav-sounds">
-                <a href="https://www.bbc.co.uk/sounds">Sounds</a>
-              </li>
-              <li class="orb-nav-cbbc">
-                <a href="https://www.bbc.co.uk/cbbc">CBBC</a>
-              </li>
-              <li class="orb-nav-cbeebies">
-                <a href="https://www.bbc.co.uk/cbeebies">CBeebies</a>
-              </li>
-              <li class="orb-nav-food">
-                <a href="https://www.bbc.co.uk/food">Food</a>
-              </li>
-              <li class="orb-nav-bitesize">
-                <a href="https://www.bbc.co.uk/bitesize">Bitesize</a>
-              </li>
-              <li class="orb-nav-arts">
-                <a href="https://www.bbc.co.uk/arts">Arts</a>
-              </li>
-              <li class="orb-nav-taster">
-                <a href="https://www.bbc.co.uk/taster">Taster</a>
-              </li>
-              <li class="orb-nav-local">
-                <a href="https://www.bbc.co.uk/news/localnews">Local</a>
-              </li>
-              <li class="orb-nav-three">
-                <a href="https://www.bbc.co.uk/bbcthree">Three</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </aside> -->
+
+
+
+
+
 
     <footer class="bg-customcolor-200 mt-10">
       <div class="container mx-auto text-white">
@@ -1301,12 +886,17 @@
   </Fragment>
 </template>
 <script>
+import { Carousel, Slide } from 'vue-carousel';
 import Fragment from "render-fragment";
 export default {
   data() {
     return {
       weatherBox: false
     };
+  },
+  components: {
+    Carousel,
+    Slide
   },
   methods: {
     showHideWeatherBox() {
